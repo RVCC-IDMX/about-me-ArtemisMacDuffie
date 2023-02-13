@@ -1,3 +1,3 @@
 # README
 
-
+Author: Artemis MacDuffie
