@@ -1,0 +1,33 @@
+body {
+    background-color: #A9E8EB;
+}
+
+header {
+    font-family: 'Tourney', cursive;
+    color: #629B9E;
+    background-color: #A9E8EB;
+    font-size: 4rem;
+    text-align: center;
+}
+
+main {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.5rem;
+    color: #629B9E;
+    background-color: #EBC0DB;
+    padding: 1rem;
+    border: .25rem solid #629B9E;
+}
+
+footer {
+    font-family: 'Signika Negative', sans-serif;
+    background-color:#A9E8EB;
+    color: #629B9E;
+    text-align: right;
+    padding: .25rem;
+}
+
+section {
+    border: .25rem solid #629B9E;
+    padding: 1rem;
+}
