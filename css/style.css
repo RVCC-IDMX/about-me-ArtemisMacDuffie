@@ -31,7 +31,7 @@ section {
     padding: 3rem;
 }
 
-.nestlist {
+ul ul {
     background-image: linear-gradient(90deg, #AEE, #ECD);
     margin: .25rem;
     padding-top: .25rem;
@@ -44,7 +44,7 @@ figure {
     margin-bottom: 4rem;
 }
 
-figure img, .nestlist {
+figure img, ul ul {
     border: 0rem solid rgb(0,0,0,0);
     border-radius: 1rem;
 }
