@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&family=Tourney&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <h1><img src="images/logo-96x96.svg" alt="Logo: blue origami bird.">  Web Dev I</h1>
@@ -27,36 +28,57 @@
 
         <section>
             <!--Bio section-->
-            <div>
-                <p>
-                    Fun facts about me are...
-                    <ul>
-                        <li>Pronouns: she/they</li>
-                        <li>Former outdoor educator</li>
-                        <li>9 ear piercings</li>
-                        <ul>
-                            <li>Three pairs of lobes</li>
-                            <li>Triple helix</li>
-                            <li>Adding a floating industrial soon!</li>
-                        </ul>
-                    </ul>
-                    Some of my hobbies are...
-                    <ul>
-                        <li>Writing poetry</li>
-                        <li>Writing fiction</li>
-                        <li>Music production</li>
-                        <li>TTRPG design</li>
-                        <ul>
-                            <li>PbtA</li>
-                            <li>FitD</li>
-                        </ul>
-                    </ul>
-                </p>
-            </div>
+            <h2>
+                Fun facts about me are...
+            </h2>
+            
+            <ul>
+                <li>Pronouns: she/they</li>
+                <li>Former outdoor educator</li>
+                <li>9 ear piercings</li>
+                <ul class="nestlist">
+                    <li>Three pairs of lobes</li>
+                    <li>Triple helix</li>
+                    <li>Adding a floating industrial soon!</li>
+                </ul>
+            </ul>
+        </section>
+    
+        <section>
+            <!--Hobbies section-->
+            <h2>
+                Some of my hobbies are...
+            </h2>
+            
+            <ul>
+                <li>Writing poetry</li>
+                <ul class="nestlist">
+                    <li>Working with meter, imagery, etc</li>
+                    <li>Open mic nights</li>
+                </ul>
+                <li>Writing fiction</li>
+                <ul class="nestlist">
+                    <li>Serial fiction</li>
+                    <li>Short fiction</li>
+                    <li>GL, queer lit</li>
+                </ul>
+                <li>Music production</li>
+                <ul class="nestlist">
+                    <li>FL Studio</li>
+                    <li>Synths</li>
+                    <li>Mixing & mastering</li>
+                </ul>
+                <li>TTRPG playing and design</li>
+                <ul class="nestlist">
+                    <li>PbtA</li>
+                    <li>FitD</li>
+                    <li>Homebrew</li>
+                </ul>
+            </ul>
         </section>
     </main>
-
 </body>
+    
 <footer>
     <p>Created by Artemis MacDuffie</p>
     <p>Copyright 2023</p>
