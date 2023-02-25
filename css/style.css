@@ -1,11 +1,10 @@
 body {
-    background-color: #A9E8EB;
+    background-color: #AEE;
+    color: #588;
 }
 
 header {
     font-family: 'Tourney', cursive;
-    color: #629B9E;
-    background-color: #A9E8EB;
     font-size: 4rem;
     text-align: center;
 }
@@ -13,21 +12,35 @@ header {
 main {
     font-family: 'Signika Negative', sans-serif;
     font-size: 1.5rem;
-    color: #629B9E;
-    background-color: #EBC0DB;
-    padding: 1rem;
-    border: .25rem solid #629B9E;
+    background-color: #ECD;
+    border: 0rem solid rgb(0,0,0,0);
+    border-radius: 5rem;
+    padding: 2rem;
+}
+
+#hero {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+section {
+    outline: .25rem solid #588;
+    outline-offset: -.2rem;
+    border-radius: 5rem;
+    padding: 3rem;
+}
+
+.nestlist {
+    border: 0rem solid rgb(0,0,0,0);
+    border-radius: 1rem;
+    background-image: linear-gradient(90deg, #AEE, #ECD);
+    margin: .25rem;
+    font-style: oblique;
 }
 
 footer {
     font-family: 'Signika Negative', sans-serif;
-    background-color:#A9E8EB;
-    color: #629B9E;
     text-align: right;
-    padding: .25rem;
-}
-
-section {
-    border: .25rem solid #629B9E;
     padding: 1rem;
 }
