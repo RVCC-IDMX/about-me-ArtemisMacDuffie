@@ -45,8 +45,27 @@ figure {
 }
 
 figure img, .nestlist {
-    border: 0 solid rgb(0,0,0,0);
+    border: 0rem solid rgb(0,0,0,0);
     border-radius: 1rem;
+}
+
+article {
+    padding: 1rem;
+}
+
+article h2 {
+    font-family: 'Tourney', cursive;
+}
+
+article div:first-letter {
+    font-size: 4rem;
+    font-family: 'Tourney', cursive;
+    color: #ECD;
+    float: left;
+    background-color: #588;
+    border: .5rem double #ECD;
+    padding: .75rem;
+    margin-right: .25rem;
 }
 
 footer {
