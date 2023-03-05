@@ -31,6 +31,17 @@ section {
     padding: 3rem;
 }
 
+h2 {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+#bio, #hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 ul ul {
     background-image: linear-gradient(90deg, #AEE, #ECD);
     margin: .25rem;
@@ -55,6 +66,7 @@ article {
 
 article h2 {
     font-family: 'Tourney', cursive;
+    margin-top: 1rem;
 }
 
 article div:first-letter {
@@ -72,4 +84,19 @@ footer {
     font-family: 'Signika Negative', sans-serif;
     text-align: right;
     padding: 1rem;
+}
+
+@media screen and (min-width: 60em) {
+    figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
 }
