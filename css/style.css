@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #AEE;
     color: #588;
@@ -5,7 +10,7 @@ body {
 
 header {
     font-family: 'Tourney', cursive;
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -16,12 +21,17 @@ main {
     border: 0rem solid rgb(0,0,0,0);
     border-radius: 5rem;
     padding: 2rem;
+    margin: 1rem;
 }
 
 #hero {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
+}
+
+#avatar {
+    max-width: 100%;
 }
 
 section {
@@ -31,12 +41,11 @@ section {
     padding: 3rem;
 }
 
-h2 {
-    margin: 0rem;
-    padding: 0rem;
+#gallery {
+    text-align: center;
 }
 
-#bio, #hobbies {
+#bio, #hobbies, #video {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,12 +61,23 @@ ul ul {
 
 figure {
     text-align: center;
-    margin-bottom: 4rem;
+    margin: .5em;
 }
 
 figure img, ul ul {
     border: 0rem solid rgb(0,0,0,0);
     border-radius: 1rem;
+    max-width: 100%;
+}
+
+#video p {
+    width: 70vw;
+}
+
+#myVideo {
+    width: 70vw;
+    height: 125vw;
+    margin: 1em;
 }
 
 article {
@@ -81,9 +101,62 @@ article div:first-letter {
 }
 
 footer {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#flags {
+    display: none;
+}
+
+.flag {
+    width: 7.5em;
+    height: 4.5em;
+    margin: .5em;
+}
+
+.flag.pride {
+    background-image: linear-gradient(red 16.66%, orange 0 33.33%, yellow 0 50%, green 0 66.66%, blue 0 83.33%, indigo 0);
+}
+
+.flag.trans {
+    background-image: linear-gradient(skyblue 20%, pink 0 40%, white 0 60%, pink 0 80%, skyblue 0);
+  }
+
+#copyright {
     font-family: 'Signika Negative', sans-serif;
     text-align: right;
     padding: 1rem;
+}
+
+@media screen and (min-width: 550px) {
+    header {
+        font-size: 4rem;
+    }
+    
+    #hero {
+        font-size: 3rem;
+    }
+    
+    #flags {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    #video p {
+        width: 450px;
+    }
+
+    #myVideo {
+        width: 449px;
+        height: 800px;
+    }
 }
 
 @media screen and (min-width: 60em) {
@@ -98,6 +171,10 @@ footer {
         align-items: center;
         font-size: 2rem;
         margin-left: 1rem;
+    }
+
+    #video p {
+        width: 750px;
     }
 
     #lit div {
@@ -117,10 +194,6 @@ footer {
         text-align: center;
     }
 
-    #gallery hr {
-        display: none;
-    }
-
     #gallery div {
         width: 1rem;
     }
@@ -128,9 +201,5 @@ footer {
     figure {
         display: block;
         margin-bottom: 0;
-    }
-
-    img {
-        max-width: 100%;
     }
 }
