@@ -122,6 +122,8 @@ legend {
     flex-direction: column;
     max-width: 600px;
     margin: auto;
+    border: .25rem solid rgb(85, 136, 136, .5);
+    border-radius: 1rem;
 }
 
 label {
@@ -130,9 +132,19 @@ label {
 
 fieldset input, fieldset select, fieldset textarea {
     margin-bottom: 1em;
-    height: 2rem;
+    height: 2.5rem;
     padding-left: .5em;
     padding-right: .5em;
+    border: 0rem solid rgb(0,0,0,0);
+    border-radius: 1rem;
+    background-color: #fff;
+    background-image: linear-gradient(90deg, #fff, #AEE);
+    color: #588;
+}
+
+fieldset input:focus, fieldset select:focus, fieldset textarea:focus {
+    outline: 5px solid #aee;
+    box-shadow: 0 0 25px #588;
 }
 
 fieldset textarea {
@@ -161,6 +173,14 @@ ul li input {
     margin-top: 1em;
     width: 10em;
     height: 3em;
+    border: .25rem solid #588;
+    border-radius: 1rem;
+    background-color: #ecd;
+    color: #588;
+}
+
+.submit:active {
+    background-color: #aee;
 }
 
 #contactForm p {
@@ -226,6 +246,7 @@ footer {
     #contactForm #followupField {
         grid-column-start: 1;
         grid-column-end: -1;
+        width: 60%;
         display: flex;
         flex-direction: column;
     }
