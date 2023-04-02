@@ -82,7 +82,9 @@
             <h2>
                 Gallery
             </h2>
+
             <figure>
+                <!--newt photo-->
                 <img src="img/red-eft-640w.jpg" width="640" alt="A red eft.">
                 <figcaption>
                     A red eft found in a hardwood forest in New England.
@@ -90,6 +92,7 @@
             </figure>
 
             <figure>
+                <!--cat photo-->
                 <img src="img/pip-640w.jpg" width="640" alt="A yellow-orange cat on a bookshelf.">
                 <figcaption>
                     One of my cats, Pip! She is a rascal who likes finding odd hiding places.
@@ -97,6 +100,7 @@
             </figure>
 
             <figure>
+                <!--jewelry photo-->
                 <img src="img/left-ear-640w.jpg" width="640"
                 alt="A left ear with six piercings.">
                 <figcaption>
@@ -110,6 +114,8 @@
             <h2>
                 Videos
             </h2>
+
+            <!--cat video-->
             <iframe id="myVideo" src="https://www.youtube.com/embed/teFQnEfevN4" title="My cats" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>A very brief overview of my cats, Willis and Pip. They were found, abandoned, about 12 years ago, and they've been living with us ever since. They appear to be siblings (though from different litters, as Willis is a little older). They are soft and gentle.</p>
         </section>
@@ -128,15 +134,77 @@
                 <p>In the huge gilt Venetian lantern, spoil of some Doge's barge, that hung from the ceiling of the great, oak-panelled hall of entrance, lights were still burning from three flickering jets: thin blue petals of flame they seemed, rimmed with white fire. He turned them out and, having thrown his hat and cape on the table, passed through the library towards the door of his bedroom, a large octagonal chamber on the ground floor that, in his new-born feeling for luxury, he had just had decorated for himself and hung with some curious Renaissance tapestries that had been discovered stored in a disused attic at Selby Royal. As he was turning the handle of the door, his eye fell upon the portrait Basil Hallward had painted of him. He started back as if in surprise. Then he went on into his own room, looking somewhat puzzled. After he had taken the button-hole out of his coat, he seemed to hesitate. Finally, he came back, went over to the picture, and examined it. In the dim arrested light that struggled through the cream-coloured silk blinds, the face appeared to him to be a little changed. The expression looked different. One would have said that there was a touch of cruelty in the mouth. It was certainly strange.</p>
             </div>
         </article>
+
+        <section id="contact">
+            <h2>
+                Contact us!
+            </h2>
+            <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+                <fieldset>
+                    <legend>
+                        Contact Form
+                    </legend>
+                    
+                    <!--name-->
+                    <label for="name">Name:*</label>
+                    <input type="text" name="name" id="name" required>
+                    
+                    <!--email-->
+                    <label for="email">Email:*</label>
+                    <input type="email" name="email" id="email" required>
+                    
+                    <!--phone-->
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone">
+                    
+                    <!--phone type-->
+                    <label for="phonetype">Type:</label>
+                    <select name="phonetype" id="phonetype">
+                        <option value="" selected>Select phone type</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="home">Home</option>
+                        <option value="work">Work</option>
+                    </select>
+
+                    <!--message field-->
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="8"></textarea>
+
+                    <!--followup-->
+                    <fieldset id="followupField">
+                        <legend>Do you want a followup?</legend>
+                        <ul>
+                            <li><input type="radio" name="followup" id="followupYes" value="yes" required>
+                                <label for="followupYes">
+                                     Yes
+                                </label>
+                            </li>
+                            
+                            <li><input type="radio" name="followup" id="followupNo" value="no" required>
+                                <label for="followupNo">
+                                     No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <button class="submit" type="submit" name="submit">Send</button>
+                </fieldset>
+                <p>*necessary field</p>
+            </form>
+        </section>
     </main>
 </body>
     
 <footer>
     <div id="flags">
+        <!--just some cute pride flags-->
         <div class="flag pride"></div>
         <div class="flag trans"></div>
     </div>
-    <div></div>
+
+    <div><!--empty tag to help with formatting--></div>
+
     <div id="copyright">
         <p>Created by Artemis MacDuffie</p>
         <p>Copyright 2023</p>
