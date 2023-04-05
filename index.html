@@ -9,12 +9,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&family=Tourney&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
     <header>
-        <h1><img src="img/logo-96x96.svg" alt="Logo: blue origami bird.">  Web Dev I</h1>
+        <!--navbar and page title-->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img id="origami" src="img/logo-96x96.svg" alt="Logo: blue origami bird.">
+                </a>
+                <h1>Web Dev I</h1>
+            </div>
+                
+            <div class="navbar-links">
+                <!-- this button seems cool but I'm having difficulty with it
+                    <input type="checkbox" id="navtoggle" class="navtoggle">
+                    <label for="navtoggle" id="navtoggle-label" class="navtoggle-label">
+                        <div class="menu-icon"></div>
+                    </label>
+                -->
+
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#lit">Blog</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
     <main>
         <section id="hero">
             <!--Hero section-->
