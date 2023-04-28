@@ -1,6 +1,6 @@
 body {
-    background-color: #AEE;
-    color: #588;
+    background-color: #cff;
+    color: #406080;
 }
 
 header {
@@ -11,7 +11,7 @@ header {
 main {
     font-family: 'Signika Negative', sans-serif;
     font-size: 1.5rem;
-    background-color: #ECD;
+    background-color: #ffeaea;
     border: 0rem solid rgb(0,0,0,0);
     border-radius: 5rem;
     padding: 2rem;
@@ -33,7 +33,7 @@ h2 {
 }
 
 section {
-    outline: .25rem solid #588;
+    outline: .25rem solid #406080;
     outline-offset: -.2rem;
     border-radius: 5rem;
     padding: 3rem;
@@ -50,7 +50,7 @@ section {
 }
 
 ul ul {
-    background-image: linear-gradient(90deg, #AEE, #ECD);
+    background-image: linear-gradient(90deg, #cff, #ffeaea);
     margin: .25rem;
     padding-top: .25rem;
     padding-bottom: .25rem;
@@ -90,10 +90,10 @@ article h2 {
 article div:first-letter {
     font-size: 4rem;
     font-family: 'Tourney', cursive;
-    color: #ECD;
+    color: #ffeaea;
     float: left;
-    background-color: #588;
-    border: .5rem double #ECD;
+    background-color: #406080;
+    border: .5rem double #ffeaea;
     padding: .75rem;
     margin-right: .25rem;
 }
@@ -103,8 +103,8 @@ form {
 }
 
 legend {
-    background-color: #aee;
-    background-image: linear-gradient(90deg, #AEE, #ECD);
+    background-color: #cff;
+    background-image: linear-gradient(90deg, #cff, #ffeaea);
     padding: .25rem;
     border: 0rem solid rgb(0,0,0,0);
     border-radius: 1rem;
@@ -132,13 +132,13 @@ fieldset input, fieldset select, fieldset textarea {
     border: 0rem solid rgb(0,0,0,0);
     border-radius: 1rem;
     background-color: #fff;
-    background-image: linear-gradient(90deg, #fff, #AEE);
-    color: #588;
+    background-image: linear-gradient(90deg, #fff, #cff);
+    color: #406080;
 }
 
 fieldset input:focus, fieldset select:focus, fieldset textarea:focus {
-    outline: 5px solid #aee;
-    box-shadow: 0 0 25px #588;
+    outline: 5px solid #cff;
+    box-shadow: 0 0 25px #406080;
 }
 
 fieldset textarea {
@@ -167,14 +167,14 @@ ul li input {
     margin-top: 1em;
     width: 10em;
     height: 3em;
-    border: .25rem solid #588;
+    border: .25rem solid #406080;
     border-radius: 1rem;
-    background-color: #ecd;
-    color: #588;
+    background-color: #ffeaea;
+    color: #406080;
 }
 
 .submit:active {
-    background-color: #aee;
+    background-color: #cff;
 }
 
 #contactForm p {
