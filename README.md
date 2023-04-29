@@ -50,15 +50,15 @@ A navigation bar is implemented, and page layout is an important element of the 
 
 Primary background: #ccffff (204, 255, 255)
 
-Secondary background: #ffeaea (255, 234, 234)
+Secondary background: #ffddee (255, 221, 231)
 
-Text: #406080 (64,96,128)
+Text and borders: #184878 (24,72,120)
 
 ### Contrasts
 
-Text on primary background: 6.03
+Text on primary background: 8.63
 
-Text on secondary background: 5.68
+Text on secondary background: 7.52
 
 ## Formatting
 

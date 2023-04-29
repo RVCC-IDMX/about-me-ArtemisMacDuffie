@@ -31,7 +31,7 @@ main {
     left: 0;
     z-index: 100;
     width: 100%;
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
@@ -42,7 +42,7 @@ main {
 .logo {
     font-size: 1rem;
     padding: .5em;
-    background-color: #cff;
+    background-color: #ccffff;
     display: flex;
     align-items: center;
     grid-column: 2 / 3;
@@ -59,8 +59,8 @@ main {
 /* this seems cool but I need to understand it better
 
 .menu-icon {
-    background-color: #cff;
-    background-image: linear-gradient(#468 20%, #cff 0 40%, #468 0 60%, #cff 0 80%, #468 0);
+    background-color: #ccffff;
+    background-image: linear-gradient(#184878 20%, #ccffff 0 40%, #184878 0 60%, #ccffff 0 80%, #184878 0);
     width: 2em;
     height: 2em;
     transition: transform 250ms ease-in-out 0ms;
@@ -69,7 +69,7 @@ main {
 .navbar-links {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background-color: #cff;
+    background-color: #ccffff;
 }
 
 .navtoggle {
@@ -81,7 +81,7 @@ nav ul {
     text-transform: uppercase;
     margin: 0;
     font-family: 'Signika Negative', sans-serif;
-    background-color: #cff;
+    background-color: #ccffff;
     /* border-bottom-right-radius: .5em; */
     padding-top: .1em;
     /* transform: scale(1, 0); */
@@ -96,7 +96,7 @@ nav li {
 
 .navbar-links a {
     text-decoration: none;
-    color: #468;
+    color: #184878;
     /* opacity: 0; */
     transition: opacity 100ms ease-in-out, color 250ms ease-in;
 }
@@ -129,19 +129,23 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 
-@media screen and (min-width: 25em) {
+@media screen and (min-width: 40em) {
     .logo {
         font-size: 2rem;
     }
+
+    .navbar-links {
+        font-size: 3rem;
+    }
 }
 
-@media screen and (min-width: 65em) {
+@media screen and (min-width: 75em) {
     .navbar {
         grid-template-columns: 1fr 1fr;
         padding-top: 0;
-        background-color: #cff;
+        background-color: #ccffff;
         width: 100%;
-        border-bottom: .1em solid #468;
+        border-bottom: .1em solid #184878;
     }
 
     .logo {
