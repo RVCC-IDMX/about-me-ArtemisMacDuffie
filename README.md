@@ -44,7 +44,11 @@ The page incorporates a functioning form for data entry.
 
 ### Navigation scheme
 
-A navigation bar is implemented, and page layout is an important element of the page design.
+A navigation bar that responds to screen size is implemented, and page layout is an important element of the page design.
+
+### Web image formatting
+
+The page uses original SVG files and favicons.
 
 ## Color scheme
 

@@ -11,17 +11,11 @@ header {
 a {
     text-decoration: none;
     color: #184878;
-    /* opacity: 0; */
-    transition: opacity 100ms ease-in-out, color 250ms ease-in;
+    transition: color 250ms ease-in;
 }
 
 a:hover, .navbar-links a:focus {
     color: white;
-}
-
-#am-orbital {
-    min-width: 96px;
-    min-height: 96px;
 }
 
 main {
