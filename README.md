@@ -1,5 +1,7 @@
 # README
 
+![A M icon](img\favicon-96x96.png)
+
 Author: Artemis MacDuffie
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/549e816f-a343-455f-af31-6406ab6e8817/deploy-status)](https://app.netlify.com/sites/about-me-artemismacduffie/deploys)
@@ -18,7 +20,7 @@ It also required implementation of certain HTML features, such as grid, flexbox,
 
 ### CSS
 
-Formatting and layout is done primarily through CSS files.
+Formatting and layout is done primarily through CSS files. This includes animations, pseudoelements, and pseudoclasses.
 
 ### Media
 

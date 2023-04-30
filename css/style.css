@@ -8,6 +8,17 @@ header {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: #184878;
+    /* opacity: 0; */
+    transition: opacity 100ms ease-in-out, color 250ms ease-in;
+}
+
+a:hover, .navbar-links a:focus {
+    color: white;
+}
+
 #am-orbital {
     min-width: 96px;
     min-height: 96px;
@@ -33,8 +44,10 @@ h2 {
     font-weight: bold;
 }
 
-#avatar {
+#selfie {
     max-width: 100%;
+    border: 0rem solid rgb(0,0,0,0);
+    border-radius: 10rem;
 }
 
 section {
@@ -215,7 +228,7 @@ footer {
     background-image: linear-gradient(skyblue 20%, pink 0 40%, white 0 60%, pink 0 80%, skyblue 0);
   }
 
-#copyright {
+#copyright, #repo {
     font-family: 'Signika Negative', sans-serif;
     text-align: right;
     padding: 1rem;

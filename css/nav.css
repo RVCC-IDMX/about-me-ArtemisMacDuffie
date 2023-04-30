@@ -94,13 +94,6 @@ nav li {
     font-size: .4em;
 }
 
-.navbar-links a {
-    text-decoration: none;
-    color: #184878;
-    /* opacity: 0; */
-    transition: opacity 100ms ease-in-out, color 250ms ease-in;
-}
-
 /*  
  style all a tags in header 
  and then on hover
@@ -117,10 +110,6 @@ nav li {
 .navtoggle:checked ~ ul a {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms, color 250ms ease-in;
-}
-
-.navbar-links a:hover, .navbar-links a:focus {
-    color: white;
 }
 
 /* 
