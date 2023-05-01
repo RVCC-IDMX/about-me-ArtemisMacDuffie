@@ -10,7 +10,7 @@ Author: Artemis MacDuffie
 
 This webpage was created as an ongoing project for the IDMX-225 course at Raritan Valley Community College.
 
-## Skills and knowledges learned
+## Skills and knowledges learned and used
 
 ### HTML Structure
 
@@ -60,11 +60,17 @@ Secondary background: #ffddee (255, 221, 231)
 
 Text and borders: #184878 (24,72,120)
 
+Links: #980020 (152, 0, 32)
+
 ### Contrasts
 
 Text on primary background: 8.63
 
 Text on secondary background: 7.52
+
+Link on primary background: 8.19
+
+Link on secondary background: 7.14
 
 ## Formatting
 

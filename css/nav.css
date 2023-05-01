@@ -1,15 +1,11 @@
 /* make scrolling smooth */
-
 html {
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
 }
 
-/* 
- get rid of padding & sizing on body so
- header is at top
-*/
+/* get rid of padding & sizing on body so header is at top */
 
 body {
     box-sizing: border-box;
@@ -18,13 +14,18 @@ body {
 }
 
 /* add some padding back to rest of page */
-
 main {
     padding-top: 6em;
 }
 
 /* navbar */
 
+/*
+navbar formatting is dependent on screen size;
+at smaller sizes the menu is on the left via hamburger icon,
+at medium sizes the menu is always active on the left,
+and it is displayed horizontally on the right at larger sizes
+*/
 .navbar {
     position: fixed;
     top: 0;
@@ -33,12 +34,10 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
     line-height: 0;
 }
 
 /* logo */
-
 .logo {
     font-size: .75rem;
     padding: .5em;
@@ -71,16 +70,34 @@ main {
     transition: transform 250ms ease-in-out 0ms;
 }
 
+/* determines menu placement (left at small and medium sizes) */
 .navbar-links {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     background-color: #ccffff;
 }
 
+/* hides the checkbox */
 .navtoggle {
     display: none;
 }
 
+/*
+this makes the label the same dimensions as the icon,
+so the whole icon is clickable/tappable
+*/
+.navtoggle-label {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 0;
+}
+
+/*
+the settings for the navigation menu on smaller screens;
+the transform and opacity properties are undone at larger
+screen sizes so they do not have the menu hidden
+*/
 nav ul {
     list-style: none;
     text-transform: uppercase;
@@ -88,7 +105,7 @@ nav ul {
     line-height: normal;
     font-family: 'Signika Negative', sans-serif;
     background-color: #ccffff;
-    border-bottom-right-radius: .5em;
+    border-bottom-right-radius: 2em;
     padding: .1em;
     transform: scale(1, 0);
     transform-origin: top;
@@ -103,12 +120,12 @@ nav li {
     margin: .75em;
 }
 
-/*  
- style all a tags in header 
- and then on hover
+/*
+when the navigation menu is activated,
+the hamburger icon rotates, the menu loses
+transparency, and the menu drops down
 */
-
-.navtoggle:checked ~ .navtoggle-label .menu-icon {
+.navtoggle:checked ~ .menu-icon {
     transform: rotateZ(90deg);
 }
 
@@ -124,6 +141,7 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 
+/* first few are just font sizing */
 @media screen and (min-width: 25em) {
     .logo {
         font-size: 1.15em;
@@ -141,11 +159,14 @@ such that no text wraps
         font-size: 1.8em;
     }
 
+    /*
+    this disables the effect of the hamburger button;
+    the menu will simply be a list on the left side
+    */
     .menu-icon {
         display: none;
     }
 
-    /* this disables the effect of the hamburger button */
     nav ul {
         opacity: 1;
         position: static;
@@ -154,6 +175,7 @@ such that no text wraps
     }
 }
 
+/* more font sizing */
 @media screen and (min-width: 60em) {
     .logo {
         font-size: 2.7em;
@@ -164,6 +186,10 @@ such that no text wraps
     }
 }
 
+/*
+complete rearranges the navbar for larger screens;
+menu is now horizontal and on the right side
+*/
 @media screen and (min-width: 75em) {
     .navbar {
         grid-template-columns: 1fr 1fr;

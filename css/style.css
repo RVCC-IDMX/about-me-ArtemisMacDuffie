@@ -1,3 +1,4 @@
+/* general formatting */
 body {
     background-color: #ccffff;
     color: #184878;
@@ -8,21 +9,11 @@ header {
     text-align: center;
 }
 
-a {
-    text-decoration: none;
-    color: #184878;
-    transition: color 250ms ease-in;
-}
-
-a:hover, .navbar-links a:focus {
-    color: white;
-}
-
 main {
     font-family: 'Signika Negative', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1em;
     background-color: #ffddee;
-    border: 0rem solid rgb(0,0,0,0);
+    border: 0rem solid rgb(0, 0, 0, 0);
     border-radius: 5rem;
     padding: 2rem;
     margin: 1rem;
@@ -30,18 +21,7 @@ main {
 
 h2 {
     text-align: center;
-}
-
-#hero {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-#selfie {
-    max-width: 100%;
-    border: 0rem solid rgb(0,0,0,0);
-    border-radius: 10rem;
+    font-size: 1.5em;
 }
 
 section {
@@ -51,16 +31,15 @@ section {
     padding: 3rem;
 }
 
-#gallery {
-    text-align: center;
-}
-
-#bio, #hobbies, #video {
+#bio,
+#hobbies,
+#video {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* make nested lists stand out */
 ul ul {
     background-image: linear-gradient(90deg, #ccffff, #ffddee);
     margin: .25rem;
@@ -69,17 +48,50 @@ ul ul {
     font-style: oblique;
 }
 
+/* links turn white on hover or focus */
+a {
+    text-decoration: none;
+    color: #980020;
+    transition: color 250ms ease-in;
+}
+
+a:hover,
+.navbar-links a:focus {
+    color: white;
+}
+
+/* hero section formatting */
+#hero {
+    font-family: 'Tourney', cursive;
+    text-align: center;
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+#selfie {
+    max-width: 100%;
+    border: 0rem solid rgb(0, 0, 0, 0);
+    border-radius: 10rem;
+}
+
+/* gallery formatting */
+#gallery {
+    text-align: center;
+}
+
 figure {
     text-align: center;
     margin: .5em;
 }
 
-figure img, ul ul {
-    border: 0rem solid rgb(0,0,0,0);
+figure img,
+ul ul {
+    border: 0rem solid rgb(0, 0, 0, 0);
     border-radius: 1rem;
     max-width: 100%;
 }
 
+/* video formatting */
 #video p {
     width: 70vw;
 }
@@ -88,8 +100,10 @@ figure img, ul ul {
     width: 70vw;
     height: 125vw;
     margin: 1em;
+    border: none;
 }
 
+/* blog formatting */
 article {
     padding: 1rem;
 }
@@ -99,6 +113,7 @@ article h2 {
     margin-top: 1rem;
 }
 
+/* illuminated initial */
 article div:first-letter {
     font-size: 4rem;
     font-family: 'Tourney', cursive;
@@ -110,6 +125,7 @@ article div:first-letter {
     margin-right: .25rem;
 }
 
+/* form formatting */
 form {
     margin: auto;
 }
@@ -118,7 +134,7 @@ legend {
     background-color: #ccffff;
     background-image: linear-gradient(90deg, #ccffff, #ffddee);
     padding: .25rem;
-    border: 0rem solid rgb(0,0,0,0);
+    border: 0rem solid rgb(0, 0, 0, 0);
     border-radius: 1rem;
 }
 
@@ -136,19 +152,23 @@ label {
     text-align: left;
 }
 
-fieldset input, fieldset select, fieldset textarea {
+fieldset input,
+fieldset select,
+fieldset textarea {
     margin-bottom: 1em;
     height: 2.5rem;
     padding-left: .5em;
     padding-right: .5em;
-    border: 0rem solid rgb(0,0,0,0);
+    border: 0rem solid rgb(0, 0, 0, 0);
     border-radius: 1rem;
     background-color: #ffffff;
     background-image: linear-gradient(90deg, #ffffff, #ccffff);
     color: #184878;
 }
 
-fieldset input:focus, fieldset select:focus, fieldset textarea:focus {
+fieldset input:focus,
+fieldset select:focus,
+fieldset textarea:focus {
     outline: 5px solid #ccffff;
     box-shadow: 0 0 25px #184878;
 }
@@ -156,9 +176,6 @@ fieldset input:focus, fieldset select:focus, fieldset textarea:focus {
 fieldset textarea {
     padding-top: .5em;
     padding-bottom: .5em;
-}
-
-fieldset textarea {
     resize: none;
     height: 8rem;
 }
@@ -172,6 +189,7 @@ ul li input {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 0;
 }
 
 .submit {
@@ -196,6 +214,7 @@ ul li input {
     margin: auto;
 }
 
+/* footer formatting */
 footer {
     width: 95%;
     display: flex;
@@ -204,6 +223,10 @@ footer {
     margin: auto;
 }
 
+/*
+just cute pride flags made from playing around with linear gradients
+hidden on small screen sizes
+*/
 #flags {
     display: none;
 }
@@ -220,25 +243,39 @@ footer {
 
 .flag.trans {
     background-image: linear-gradient(skyblue 20%, pink 0 40%, white 0 60%, pink 0 80%, skyblue 0);
-  }
+}
 
-#copyright, #repo {
+#copyright,
+#repo {
     font-family: 'Signika Negative', sans-serif;
     text-align: right;
     padding: 1rem;
 }
 
-@media screen and (min-width: 550px) {    
+#repo {
+    text-align: left;
+}
+
+@media screen and (min-width: 25em) {
     #hero {
-        font-size: 3rem;
+        font-size: 1.3rem;
     }
-    
-    #flags {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+}
+
+@media screen and (min-width: 550px) {
+    #hero {
+        font-size: 2rem;
     }
 
+    main {
+        font-size: 1.25em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    /* change form formatting for larger screens */
     #contactForm fieldset {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -253,7 +290,9 @@ footer {
         flex-direction: column;
     }
 
-    input, select, textarea {
+    input,
+    select,
+    textarea {
         grid-column-start: span 2;
     }
 
@@ -265,9 +304,39 @@ footer {
         text-align: right;
         padding-right: .5em;
     }
+
+    /*
+    once there is room, display flags
+    and format the footer for them
+    */
+    footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #flags {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #repo {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 640px) {
+    /*
+    prevents the lists from getting shoved
+    to the left by longer entries
+    */
+    #bio ul,
+    #hobbies ul {
+        max-width: 60vw;
+    }
+
+    /* full video size can be on display, no need to get bigger */
     #video p {
         width: 450px;
     }
@@ -279,6 +348,15 @@ footer {
 }
 
 @media screen and (min-width: 60em) {
+    #hero {
+        font-size: 2em;
+    }
+
+    main {
+        font-size: 1.5em;
+    }
+
+    /* gallery switches to putting images and captions side-by-side */
     figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -292,16 +370,22 @@ footer {
         margin-left: 1rem;
     }
 
+    /* video caption doesn't need to get wider than this */
     #video p {
         width: 750px;
     }
 
-    #lit div {
+    /* on wide screens, split the text into columns for easier reading */
+    #blog div {
         max-width: 100%;
         columns: 40rem;
     }
 }
 
+/*
+gallery switches to putting images side
+by side to take advantage of screen size
+*/
 @media screen and (min-width: 100em) {
     #gallery {
         display: grid;

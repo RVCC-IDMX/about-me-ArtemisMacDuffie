@@ -1,333 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Author: Artemis MacDuffie, page made for IDMX-225 at RVCC.">
-    <title>About Me</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&family=Tourney&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="icon" type="image/png" size="96x96" href="img/favicon-96x96.png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Author: Artemis MacDuffie, page made for IDMX-225 at RVCC.">
 
-<body>
-    <header>
-        <!--navbar and page title-->
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#hero">
-                    <img id="am-orbital" width="96" src="img/am-orbital.svg" alt="The letters A and M">
-                </a>
-                <h1>Web Dev I</h1>
-            </div>
+        <title>About Me</title>
+
+        <!-- font reference-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&family=Tourney&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="img/favicon-96x96.png">
+    </head>
+
+    <body>
+        <header>
+            <!--navbar and page title-->
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#hero">
+                        <img id="am-orbital" width="96" src="img/am-orbital.svg" alt="The letters A and M">
+                    </a>
+                    <h1>Web Dev I</h1>
+                </div>
+                    
+                <div class="navbar-links">
+                    <!-- icon functionality only on small screens -->
+                    <input type="checkbox" id="navtoggle" class="navtoggle">
+                    <div class="menu-icon">
+                        <label for="navtoggle" id="navtoggle-label" class="navtoggle-label"></label>
+                    </div>
+
+                    <ul>
+                        <li><a href="#bio">Bio</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <!--Hero section-->
+                <img id="selfie" src="img/pic-of-me.jpg" alt="Portrait photograph of a woman with glasses, a galaxy print headband, and a hairband decorated with blue-purple crystals.">
+
+                <h1>Artemis MacDuffie</h1>
+                <h1>Student of programming at RVCC</h1>
+                <p>SHE / HER / THEY / THEM</p>
+            </section>
+
+            <section id="bio">
+                <!--Bio section-->
+                <h2>
+                    Fun facts about me are...
+                </h2>
                 
-            <div class="navbar-links">
-                <input type="checkbox" id="navtoggle" class="navtoggle">
-                <label for="navtoggle" id="navtoggle-label" class="navtoggle-label">
-                    <div class="menu-icon"></div>
-                </label>
-
                 <ul>
-                    <li><a href="#bio">Bio</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#lit">Blog</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section id="hero">
-            <!--Hero section-->
-            <img id="selfie" src="img/pic-of-me.jpg" alt="Portrait photograph of a woman with glasses, a galaxy print headband, and a hairband decorated with blue-purple crystals.">
-
-            <div>
-                <p>Artemis MacDuffie</p>
-                <p>Student of programming at RVCC</p>
-            </div>
-        </section>
-
-        <section id="bio">
-            <!--Bio section-->
-            <h2>
-                Fun facts about me are...
-            </h2>
-            
-            <ul>
-                <li>Pronouns: she/they</li>
-                <li>Bachelor's in biology
-                    <ul>
-                        <li>Drew University</li>
-                    </ul>
-                </li>
-                <li>Former outdoor educator in various ecosystems
-                    <ul>
-                        <li>Hardwood forests (CT and MA)</li>
-                        <li>Old growth forests (CT and MA)</li>
-                        <li>Cedar swamps (CT)</li>
-                        <li>Salt marshes (Long Island Sound)</li>
-                        <li>Rocky shoreline (Long Island Sound)</li>
-                        <li>Tidal flats (Cape Cod)</li>
-                    </ul>
-                </li>
-                <li>Former classroom teacher</li>
-                <li>New to programming, excited to learn
-                    <ul>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>C, C++, C#</li>
-                        <li>HTML and CSS</li>
-                        <li>Web design</li>
-                        <li>Systems analysis and design</li>
-                        <li>Game design</li>
-                        <li>Database implementation</li>
-                        <li>Game engines</li>
-                        <li>Interactive media</li>
-                    </ul>
-                </li>
-                <li>Live with two cats
-                    <ul>
-                        <li>They were found as abandoned siblings</li>
-                        <li>Willis: older, himbo, sleepy, friendly</li>
-                        <li>Pip: younger, sneaky, talkative, soft</li>
-                    </ul>
-                </li>
-                <li>9 ear piercings
-                    <ul>
-                        <li>Three pairs of lobes</li>
-                        <li>Lobe sizes: 4.5mm, 3.5mm, 1.2mm</li>
-                        <li>Lobe goal sizes: 10mm, 4mm, 1.6mm</li>
-                        <li>Triple helix, celestial theme</li>
-                        <li>Adding a floating industrial soon!</li>
-                    </ul>
-                </li>
-                <li>Once did brain surgery on a rat
-                    <ul>
-                        <li>It was for a neuro experiment</li>
-                        <li>RIP Volnutt, you were a good rat</li>
-                    </ul>
-                </li>
-                <li>Traveled to China at least four times</li>
-                <li>Traveled to Romania</li>
-                <li>Former medieval reenactor
-                    <ul>
-                        <li>Stage combat (sword, axe, spear)</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    
-        <section id="hobbies">
-            <!--Hobbies section-->
-            <h2>
-                Some of my hobbies are...
-            </h2>
-            
-            <ul>
-                <li>Writing poetry
-                    <ul>
-                        <li>Working with meter, imagery, etc</li>
-                        <li>Open mic nights</li>
-                    </ul>
-                </li>
-                <li>Writing fiction
-                    <ul>
-                        <li>Serial fiction</li>
-                        <li>Short fiction</li>
-                        <li>GL, queer lit</li>
-                        <li>Current story I'm working on it about a monster hunter from a fantasy setting who gets sent to Earth. She has to adapt to normal life in an alien world while defending her new home from invading monsters.</li>
-                    </ul>
-                </li>
-                <li>Music production
-                    <ul>
-                        <li>FL Studio</li>
-                        <li>Synths</li>
-                        <li>Mixing and mastering</li>
-                        <li>Recording</li>
-                        <li>Lyrics</li>
-                        <li>Singing</li>
-                        <li>Percussion</li>
-                        <li>Harmonica</li>
-                    </ul>
-                </li>
-                <li>TTRPG play and design
-                    <ul>
-                        <li>Apocalypse World (PbtA)</li>
-                        <li>Thirsty Sword Lesbians (PbtA)</li>
-                        <li>Ironsworn (PbtA)</li>
-                        <li>Homebrew (PbtA, Fate)</li>
-                        <li>Blades in the Dark (FitD)</li>
-                        <li>Scum and Villainy (FitD)</li>
-                        <li>Beam Saber (FitD)</li>
-                        <li>Animon</li>
-                        <li>Lancer</li>
-                    </ul>
-                </li>
-                <li>Reading comics, watching toons
-                    <ul>
-                        <li>Paper Girls</li>
-                        <li>Saga</li>
-                        <li>Monstress</li>
-                        <li>Yuri is My Job!</li>
-                        <li>Bloom into You</li>
-                        <li>Even Though We're Adults</li>
-                        <li>The Summer You Were There</li>
-                        <li>The Golden Forest</li>
-                        <li>Straight Girl Trap</li>
-                        <li>Please Bully Me, Miss Villainess!</li>
-                        <li>Baili Jin Among Mortals</li>
-                        <li>Mobile Suit Gundam: The Witch from Mercury</li>
-                        <li>The Owl House</li>
-                        <li>RWBY</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section id="gallery">
-            <!--Gallery section-->
-            <h2>
-                Gallery
-            </h2>
-
-            <figure>
-                <!--newt photo-->
-                <img src="img/red-eft-640w.jpg" width="640" alt="A red eft.">
-                <figcaption>
-                    A red eft found in a hardwood forest in New England.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <!--cat photo-->
-                <img src="img/pip-640w.jpg" width="640" alt="A yellow-orange cat on a bookshelf.">
-                <figcaption>
-                    One of my cats, Pip! She is a rascal who likes finding odd hiding places.
-                </figcaption>
-            </figure>
-
-            <figure>
-                <!--jewelry photo-->
-                <img src="img/left-ear-640w.jpg" width="640"
-                alt="A left ear with six piercings.">
-                <figcaption>
-                    My left ear. The jewelry is all glass or titanium.
-                </figcaption>
-            </figure>
-        </section>
-
-        <section id="video">
-            <!--video section-->
-            <h2>
-                Videos
-            </h2>
-
-            <!--cat video-->
-            <iframe id="myVideo" src="https://www.youtube.com/embed/teFQnEfevN4" title="My cats" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>A very brief overview of my cats, Willis and Pip. They were found, abandoned, about 12 years ago, and they've been living with us ever since. They appear to be siblings (though from different litters, as Willis is a little older). They are soft and gentle.</p>
-        </section>
-
-        <article id="lit">
-            <!--Dorian Gray-->
-            <h2>
-                The Picture of Dorian Gray
-            </h2>
-
-            <br>
-
-            <div>
-                <p>As the dawn was just breaking, he found himself close to Covent Garden. The darkness lifted, and, flushed with faint fires, the sky hollowed itself into a perfect pearl. Huge carts filled with nodding lilies rumbled slowly down the polished empty street. The air was heavy with the perfume of the flowers, and their beauty seemed to bring him an anodyne for his pain. He followed into the market and watched the men unloading their waggons. A white-smocked carter offered him some cherries. He thanked him, wondered why he refused to accept any money for them, and began to eat them listlessly. They had been plucked at midnight, and the coldness of the moon had entered into them. A long line of boys carrying crates of striped tulips, and of yellow and red roses, defiled in front of him, threading their way through the huge, jade-green piles of vegetables. Under the portico, with its grey, sun-bleached pillars, loitered a troop of draggled bareheaded girls, waiting for the auction to be over. Others crowded round the swinging doors of the coffee-house in the piazza. The heavy cart-horses slipped and stamped upon the rough stones, shaking their bells and trappings. Some of the drivers were lying asleep on a pile of sacks. Iris-necked and pink-footed, the pigeons ran about picking up seeds.</p>
-
-                <br>
-
-                <p>After a little while, he hailed a hansom and drove home. For a few moments he loitered upon the doorstep, looking round at the silent square, with its blank, close-shuttered windows and its staring blinds. The sky was pure opal now, and the roofs of the houses glistened like silver against it. From some chimney opposite a thin wreath of smoke was rising. It curled, a violet riband, through the nacre-coloured air.</p>
-
-                <br>
-
-                <p>In the huge gilt Venetian lantern, spoil of some Doge's barge, that hung from the ceiling of the great, oak-panelled hall of entrance, lights were still burning from three flickering jets: thin blue petals of flame they seemed, rimmed with white fire. He turned them out and, having thrown his hat and cape on the table, passed through the library towards the door of his bedroom, a large octagonal chamber on the ground floor that, in his new-born feeling for luxury, he had just had decorated for himself and hung with some curious Renaissance tapestries that had been discovered stored in a disused attic at Selby Royal. As he was turning the handle of the door, his eye fell upon the portrait Basil Hallward had painted of him. He started back as if in surprise. Then he went on into his own room, looking somewhat puzzled. After he had taken the button-hole out of his coat, he seemed to hesitate. Finally, he came back, went over to the picture, and examined it. In the dim arrested light that struggled through the cream-coloured silk blinds, the face appeared to him to be a little changed. The expression looked different. One would have said that there was a touch of cruelty in the mouth. It was certainly strange.</p>
-
-                <br>
-            </div>
-        </article>
-
-        <section id="contact">
-            <h2>
-                Contact us!
-            </h2>
-            <form id="contactForm" name="contactForm" method="post" data-netlify="true">
-                <fieldset>
-                    <legend>
-                        Contact Form
-                    </legend>
-                    
-                    <!--name-->
-                    <label for="name">Name:*</label>
-                    <input type="text" name="name" id="name" required>
-                    
-                    <!--email-->
-                    <label for="email">Email:*</label>
-                    <input type="email" name="email" id="email" required>
-                    
-                    <!--phone-->
-                    <label for="phone">Phone:</label>
-                    <input type="tel" name="phone" id="phone">
-                    
-                    <!--phone type-->
-                    <label for="phonetype">Type:</label>
-                    <select name="phonetype" id="phonetype">
-                        <option value="" selected>Select phone type</option>
-                        <option value="mobile">Mobile</option>
-                        <option value="home">Home</option>
-                        <option value="work">Work</option>
-                    </select>
-
-                    <!--message field-->
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" rows="8"></textarea>
-
-                    <!--followup-->
-                    <fieldset id="followupField">
-                        <legend>Want a followup?*</legend>
+                    <!-- work and education -->
+                    <li>Bachelor's in biology
                         <ul>
-                            <li><input type="radio" name="followup" id="followupYes" value="yes" required>
-                                <label for="followupYes">
-                                     Yes
-                                </label>
-                            </li>
-
-                            <li><input type="radio" name="followup" id="followupNo" value="no" required>
-                                <label for="followupNo">
-                                     No
-                                </label>
-                            </li>
+                            <li>Drew University</li>
                         </ul>
+                    </li>
+                    <li>Former outdoor educator in various ecosystems
+                        <ul>
+                            <li>Hardwood forests (CT and MA)</li>
+                            <li>Old growth forests (CT and MA)</li>
+                            <li>Cedar swamps (CT)</li>
+                            <li>Salt marshes (Long Island Sound)</li>
+                            <li>Rocky shoreline (Long Island Sound)</li>
+                            <li>Tidal flats (Cape Cod)</li>
+                        </ul>
+                    </li>
+                    <li>Former classroom teacher
+                        <ul>
+                            <li>Biology</li>
+                            <li>Environmental science</li>
+                        </ul>
+                    </li>
+                    <li>New to programming, excited to learn
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C, C++, C#</li>
+                            <li>HTML and CSS</li>
+                            <li>Web design</li>
+                            <li>Systems analysis and design</li>
+                            <li>Game design</li>
+                            <li>Database implementation</li>
+                            <li>Game engines</li>
+                            <li>Interactive media</li>
+                        </ul>
+                    </li>
+                    <li>Once did brain surgery on a rat
+                        <ul>
+                            <li>It was for a neuro experiment</li>
+                            <li>RIP Volnutt, you were a good rat</li>
+                        </ul>
+                    </li>
+
+                    <!-- personal life -->
+                    <li>Live with two cats
+                        <ul>
+                            <li>They were found as abandoned siblings</li>
+                            <li>Willis: older, himbo, sleepy, friendly</li>
+                            <li>Pip: younger, sneaky, talkative, soft</li>
+                        </ul>
+                    </li>
+                    <li>9 ear piercings
+                        <ul>
+                            <li>Three pairs of lobes</li>
+                            <li>Lobe sizes: 4.5mm, 3.5mm, 1.2mm</li>
+                            <li>Lobe goal sizes: 10mm, 4mm, 1.6mm</li>
+                            <li>Triple helix, celestial theme</li>
+                            <li>Adding a floating industrial soon!</li>
+                        </ul>
+                    </li>
+                    <li>Traveler
+                        <ul>
+                            <li>Beijing</li>
+                            <li>Harbin</li>
+                            <li>Xi'an</li>
+                            <li>Hong Kong</li>
+                            <li>Romania</li>
+                            <li>New Mexico</li>
+                        </ul>
+                    </li>
+                    <li>Former medieval reenactor
+                        <ul>
+                            <li>Stage combat (sword, axe, spear)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        
+            <section id="hobbies">
+                <!--Hobbies section-->
+                <h2>
+                    Some of my hobbies are...
+                </h2>
+                
+                <ul>
+                    <!-- creative stuff -->
+                    <li>Writing poetry
+                        <ul>
+                            <li>Working with meter, imagery, etc</li>
+                            <li>Open mic nights</li>
+                        </ul>
+                    </li>
+                    <li>Writing fiction
+                        <ul>
+                            <li>Serial fiction</li>
+                            <li>Short fiction</li>
+                            <li>GL, queer lit</li>
+                            <li>The current story I'm working on is about a monster hunter from a fantasy setting who gets accidentally sent to Earth. She has to adapt to normal life in a world of foreign sensibilities and priorities while defending this new home against invading monsters from her old one.</li>
+                        </ul>
+                    </li>
+                    <li>Music production
+                        <ul>
+                            <li>FL Studio</li>
+                            <li>Synths</li>
+                            <li>Mixing and mastering</li>
+                            <li>Recording</li>
+                            <li>Lyrics</li>
+                            <li>Singing</li>
+                            <li>Percussion</li>
+                            <li>Harmonica</li>
+                        </ul>
+                    </li>
+                    <li>TTRPG play and design
+                        <ul>
+                            <li>Apocalypse World (PbtA)</li>
+                            <li>Thirsty Sword Lesbians (PbtA)</li>
+                            <li>Ironsworn (PbtA)</li>
+                            <li>Blades in the Dark (FitD)</li>
+                            <li>Scum and Villainy (FitD)</li>
+                            <li>Beam Saber (FitD)</li>
+                            <li>Animon</li>
+                            <li>Lancer</li>
+                            <li>Homebrew (PbtA, Fate)</li>
+                        </ul>
+                    </li>
+
+                    <!-- media -->
+                    <li>Reading comics
+                        <ul>
+                            <li>Paper Girls</li>
+                            <li>Saga</li>
+                            <li>Monstress</li>
+                            <li>Bloom into You</li>
+                            <li>Even Though We're Adults</li>
+                            <li>The Summer You Were There</li>
+                            <li>The Golden Forest</li>
+                            <li>Straight Girl Trap</li>
+                            <li>Please Bully Me, Miss Villainess!</li>
+                            <li>Baili Jin Among Mortals</li>
+                        </ul>
+                    </li>
+                    <li>Anime/cartoons
+                        <ul>
+                            <li>Mobile Suit Gundam: The Witch from Mercury</li>
+                            <li>Katanagatari</li>
+                            <li>Yuri is My Job!</li>
+                            <li>The Owl House</li>
+                            <li>RWBY</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="gallery">
+                <!--Gallery section-->
+                <h2>
+                    Gallery
+                </h2>
+
+                <figure>
+                    <!--newt photo-->
+                    <img src="img/red-eft-640w.jpg" width="640" alt="A red eft.">
+                    <figcaption>
+                        A red eft found in a hardwood forest in New England.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <!--cat photo-->
+                    <img src="img/pip-640w.jpg" width="640" alt="A yellow-orange cat on a bookshelf.">
+                    <figcaption>
+                        One of my cats, Pip! She is a rascal who likes finding odd hiding places.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <!--jewelry photo-->
+                    <img src="img/left-ear-640w.jpg" width="640"
+                    alt="A left ear with six piercings.">
+                    <figcaption>
+                        My left ear. The jewelry is all glass or titanium.
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="video">
+                <!--video section-->
+                <h2>
+                    Videos
+                </h2>
+
+                <!--cat video-->
+                <iframe id="myVideo" src="https://www.youtube.com/embed/teFQnEfevN4" title="My cats" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>A very brief overview of my cats, Willis and Pip. They were found, abandoned, about 12 years ago, and they've been living with us ever since. They appear to be siblings (though from different litters, as Willis is a little older). They are soft and gentle.</p>
+            </section>
+
+            <article id="blog">
+                <!--Dorian Gray-->
+                <h2>
+                    The Picture of Dorian Gray
+                </h2>
+
+                <div>
+                    <p>As the dawn was just breaking, he found himself close to Covent Garden. The darkness lifted, and, flushed with faint fires, the sky hollowed itself into a perfect pearl. Huge carts filled with nodding lilies rumbled slowly down the polished empty street. The air was heavy with the perfume of the flowers, and their beauty seemed to bring him an anodyne for his pain. He followed into the market and watched the men unloading their waggons. A white-smocked carter offered him some cherries. He thanked him, wondered why he refused to accept any money for them, and began to eat them listlessly. They had been plucked at midnight, and the coldness of the moon had entered into them. A long line of boys carrying crates of striped tulips, and of yellow and red roses, defiled in front of him, threading their way through the huge, jade-green piles of vegetables. Under the portico, with its grey, sun-bleached pillars, loitered a troop of draggled bareheaded girls, waiting for the auction to be over. Others crowded round the swinging doors of the coffee-house in the piazza. The heavy cart-horses slipped and stamped upon the rough stones, shaking their bells and trappings. Some of the drivers were lying asleep on a pile of sacks. Iris-necked and pink-footed, the pigeons ran about picking up seeds.</p>
+
+                    <p>After a little while, he hailed a hansom and drove home. For a few moments he loitered upon the doorstep, looking round at the silent square, with its blank, close-shuttered windows and its staring blinds. The sky was pure opal now, and the roofs of the houses glistened like silver against it. From some chimney opposite a thin wreath of smoke was rising. It curled, a violet riband, through the nacre-coloured air.</p>
+                    
+                    <p>In the huge gilt Venetian lantern, spoil of some Doge's barge, that hung from the ceiling of the great, oak-panelled hall of entrance, lights were still burning from three flickering jets: thin blue petals of flame they seemed, rimmed with white fire. He turned them out and, having thrown his hat and cape on the table, passed through the library towards the door of his bedroom, a large octagonal chamber on the ground floor that, in his new-born feeling for luxury, he had just had decorated for himself and hung with some curious Renaissance tapestries that had been discovered stored in a disused attic at Selby Royal. As he was turning the handle of the door, his eye fell upon the portrait Basil Hallward had painted of him. He started back as if in surprise. Then he went on into his own room, looking somewhat puzzled. After he had taken the button-hole out of his coat, he seemed to hesitate. Finally, he came back, went over to the picture, and examined it. In the dim arrested light that struggled through the cream-coloured silk blinds, the face appeared to him to be a little changed. The expression looked different. One would have said that there was a touch of cruelty in the mouth. It was certainly strange.</p>
+
+                    <br>
+                </div>
+            </article>
+
+            <section id="contact">
+                <!-- contact form, links to netlify -->
+                <h2>
+                    Contact us!
+                </h2>
+                <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+                    <fieldset>
+                        <legend>
+                            Contact Form
+                        </legend>
+                        
+                        <!--name-->
+                        <label for="name">Name:*</label>
+                        <input type="text" name="name" id="name" required>
+                        
+                        <!--email-->
+                        <label for="email">Email:*</label>
+                        <input type="email" name="email" id="email" required>
+                        
+                        <!--phone-->
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone">
+                        
+                        <!--phone type-->
+                        <label for="phonetype">Type:</label>
+                        <select name="phonetype" id="phonetype">
+                            <option value="" selected>Select phone type</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="home">Home</option>
+                            <option value="work">Work</option>
+                        </select>
+
+                        <!--message field-->
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" rows="8"></textarea>
+
+                        <!--followup-->
+                        <fieldset id="followupField">
+                            <legend>Want a followup?*</legend>
+                            <ul>
+                                <li><input type="radio" name="followup" id="followupYes" value="yes" required>
+                                    <label for="followupYes">
+                                        Yes
+                                    </label>
+                                </li>
+
+                                <li><input type="radio" name="followup" id="followupNo" value="no" required>
+                                    <label for="followupNo">
+                                        No
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <!-- submit button -->
+                        <button class="submit" type="submit" name="submit">Send</button>
                     </fieldset>
-
-                    <button class="submit" type="submit" name="submit">Send</button>
-                </fieldset>
-                <p>*necessary field</p>
-            </form>
-        </section>
-    </main>
-</body>
-    
-<footer>
-    <div id="flags">
+                    <p>*necessary field</p>
+                </form>
+            </section>
+        </main>
+    </body>
+        
+    <footer>
         <!--just some cute pride flags-->
-        <div class="flag pride"></div>
-        <div class="flag trans"></div>
-    </div>
+        <div id="flags">
+            <div class="flag pride"></div>
+            <div class="flag trans"></div>
+        </div>
 
-    <div id="repo"><p><a href="https://github.com/RVCC-IDMX/about-me-ArtemisMacDuffie">GitHub repository</a></p></div>
+        <!-- GitHub repo -->
+        <div id="repo"><p><a href="https://github.com/RVCC-IDMX/about-me-ArtemisMacDuffie">GitHub repository</a></p></div>
 
-    <div id="copyright">
-        <p>Created by Artemis MacDuffie</p>
-        <p>Copyright 2023</p>
-    </div>
-</footer>
+        <!-- copyright -->
+        <div id="copyright">
+            <p>Created by Artemis MacDuffie</p>
+            <p>Copyright 2023</p>
+        </div>
+    </footer>
 </html>
