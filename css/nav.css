@@ -59,15 +59,31 @@ and it is displayed horizontally on the right at larger sizes
 
 /* navigation list */
 
-/* this icon only appears on smaller screens;
-   it toggles the menu as a dropdown */
+/*
+this icon only appears on smaller screens;
+it toggles the menu as a dropdown.
+It changes color on hover and rotates when activated
+*/
 .menu-icon {
-    background-color: #ccffff;
-    background-image: linear-gradient(#184878 20%, #ccffff 0 40%, #184878 0 60%, #ccffff 0 80%, #184878 0);
     width: 3em;
     height: 3em;
     margin: 2em;
-    transition: transform 250ms ease-in-out 0ms;
+    transition: transform ease-in-out 250ms;
+    position: relative;
+}
+
+#menu-closed {
+    background-image: linear-gradient(#184878 20%, rgba(0, 0, 0, 0) 0 40%, #184878 0 60%, rgba(0, 0, 0, 0) 0 80%, #184878 0);
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+}
+
+.menu-icon:hover #menu-closed {
+    opacity: 0;
+}
+
+#menu-open {
+    background-image: linear-gradient(#ffddee 20%, rgba(0, 0, 0, 0) 0 40%, #ffddee 0 60%, rgba(0, 0, 0, 0) 0 80%, #ffddee 0);
 }
 
 /* determines menu placement (left at small and medium sizes) */
@@ -86,11 +102,16 @@ and it is displayed horizontally on the right at larger sizes
 this makes the label the same dimensions as the icon,
 so the whole icon is clickable/tappable
 */
-.navtoggle-label {
+.navtoggle-label,
+#menu-closed,
+#menu-open {
     width: 100%;
     height: 100%;
     display: inline-block;
     padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /*
