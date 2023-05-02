@@ -86,9 +86,11 @@ Body: Signika Negative ([source](https://fonts.google.com/specimen/Signika+Negat
 
 ## Sources
 
-["Candy Color Button Animation" by Yuhomyan](https://codepen.io/yuhomyan/pen/OJMejWJ)
+Professional analysis: ["The Main Role of Animation in User Interfaces"](https://www.youtube.com/watch?v=uWvObpfrwjs) by Vanessa Alvarez
 
-["Parallax Star background in CSS" by sarazond](https://codepen.io/sarazond/pen/LYGbwj)
+Code: ["Candy Color Button Animation"](https://codepen.io/yuhomyan/pen/OJMejWJ) by Yuhomyan
+
+Code: ["Parallax Star background in CSS"](https://codepen.io/sarazond/pen/LYGbwj) by sarazond
 
 ## License
 
