@@ -387,7 +387,7 @@ hidden on small screen sizes
     }
 
     /* on wide screens, split the text into columns for easier reading */
-    #blog div {
+    #blog > div {
         max-width: 100%;
         columns: 40rem;
     }

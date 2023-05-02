@@ -92,6 +92,8 @@ Code: ["Candy Color Button Animation"](https://codepen.io/yuhomyan/pen/OJMejWJ) 
 
 Code: ["Parallax Star background in CSS"](https://codepen.io/sarazond/pen/LYGbwj) by sarazond
 
+Code: ["Simple HTML & SVG Loading Spinners"](https://codepen.io/sdelaney/pen/wWdxPe) by Stephen Delaney
+
 ## License
 
 [![Creative Commons Attribution 4.0 License icon](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0)
