@@ -113,8 +113,19 @@ article h2 {
     margin-top: 1rem;
 }
 
+article .body p:first-child {
+    margin-top: 0;
+}
+
+#sources ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 8em;
+    text-indent: -6em;
+}
+
 /* illuminated initial */
-article div:first-letter {
+article .body:first-letter {
     font-size: 4rem;
     font-family: 'Tourney', cursive;
     color: #ffddee;

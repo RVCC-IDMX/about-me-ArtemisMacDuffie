@@ -16,6 +16,8 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/stars.css">
+        <link rel="stylesheet" href="css/button.css">
 
         <!-- favicon -->
         <link rel="icon" type="image/png" href="img/favicon-96x96.png">
@@ -36,6 +38,8 @@
                     <!-- icon functionality only on small screens -->
                     <input type="checkbox" id="navtoggle" class="navtoggle">
                     <div class="menu-icon">
+                        <!-- the divs make up the icon,
+                        the label activates the hidden checkbox -->
                         <div id="menu-open"></div>
                         <div id="menu-closed"></div>
                         <label for="navtoggle" id="navtoggle-label" class="navtoggle-label"></label>
@@ -265,19 +269,42 @@
             </section>
 
             <article id="blog">
-                <!--Dorian Gray-->
+                <!-- blog article on CSS animation -->
                 <h2>
-                    The Picture of Dorian Gray
+                    CSS animation: why and how
                 </h2>
 
-                <div>
-                    <p>As the dawn was just breaking, he found himself close to Covent Garden. The darkness lifted, and, flushed with faint fires, the sky hollowed itself into a perfect pearl. Huge carts filled with nodding lilies rumbled slowly down the polished empty street. The air was heavy with the perfume of the flowers, and their beauty seemed to bring him an anodyne for his pain. He followed into the market and watched the men unloading their waggons. A white-smocked carter offered him some cherries. He thanked him, wondered why he refused to accept any money for them, and began to eat them listlessly. They had been plucked at midnight, and the coldness of the moon had entered into them. A long line of boys carrying crates of striped tulips, and of yellow and red roses, defiled in front of him, threading their way through the huge, jade-green piles of vegetables. Under the portico, with its grey, sun-bleached pillars, loitered a troop of draggled bareheaded girls, waiting for the auction to be over. Others crowded round the swinging doors of the coffee-house in the piazza. The heavy cart-horses slipped and stamped upon the rough stones, shaking their bells and trappings. Some of the drivers were lying asleep on a pile of sacks. Iris-necked and pink-footed, the pigeons ran about picking up seeds.</p>
+                <div class="body">
+                    <p>Animation is essentially the act of causing something to move or change. It is easy to consider it entertainment, but designers must consider the effect it has from both an aesthetic and functional perspective. As addressed by Vanessa Alvarez in her presentation for Women Who Code, animation is attention-grabbing, which can be beneficial or deleterious. It can be distracting or malicious, but there are many benefits when used responsibly. It can be used to convey concepts more fluently than words or images alone, such as expressing brand identity, emotional messaging, or demonstration. In addition to being a vehicle for ideas, there are practical uses, such as helping users visualize information flow, helping users understand relationships between elements, giving users feedback to input, and informing users of app state.</p>
 
-                    <p>After a little while, he hailed a hansom and drove home. For a few moments he loitered upon the doorstep, looking round at the silent square, with its blank, close-shuttered windows and its staring blinds. The sky was pure opal now, and the roofs of the houses glistened like silver against it. From some chimney opposite a thin wreath of smoke was rising. It curled, a violet riband, through the nacre-coloured air.</p>
-                    
-                    <p>In the huge gilt Venetian lantern, spoil of some Doge's barge, that hung from the ceiling of the great, oak-panelled hall of entrance, lights were still burning from three flickering jets: thin blue petals of flame they seemed, rimmed with white fire. He turned them out and, having thrown his hat and cape on the table, passed through the library towards the door of his bedroom, a large octagonal chamber on the ground floor that, in his new-born feeling for luxury, he had just had decorated for himself and hung with some curious Renaissance tapestries that had been discovered stored in a disused attic at Selby Royal. As he was turning the handle of the door, his eye fell upon the portrait Basil Hallward had painted of him. He started back as if in surprise. Then he went on into his own room, looking somewhat puzzled. After he had taken the button-hole out of his coat, he seemed to hesitate. Finally, he came back, went over to the picture, and examined it. In the dim arrested light that struggled through the cream-coloured silk blinds, the face appeared to him to be a little changed. The expression looked different. One would have said that there was a touch of cruelty in the mouth. It was certainly strange.</p>
+                    <p>Animations can be placed in web pages as embedded media, such as videos (or the once common flash media), and they can be created with Javascript. However, CSS alone gives powerful tools for animation that does not require external media or complex code. One implementation is through the animation properties, which include the name of the keyframe rule that defines the animation, as well as various animation parameters such as duration, delay, and form of iteration. For example, this button below, designed by Yuhomyan, features a keyframe rule involving opacity and color such that it appears as a glint flashing over the button. The animation properties are in the declaration block for the button’s before pseudoclass such that it iterates forever with a three-second delay in between occurrences.</p>
 
-                    <br>
+                    <div id="hover-effect">
+                        <button class="custom-btn btn-11">Read More<div class="dot"></div></button>
+                    </div>
+
+                    <p>Another form of animation includes use of pseudoclasses to trigger a change in an element, particularly hover, though others are useful as well, such as checked. This button features animations based on pseudoclasses as well; on hover, it slightly changes color, and on active, its shadows change such that it gives the impression of being pushed, both of which help give user feedback. Another example is the hamburger menu icon that appears on this page’s navbar when the screen is at narrower sizes. On hover, the color shifts from dark blue to pink, and clicking it activates a hidden checkbox, which in turn rotates the icon and animates the menu as a dropdown. Instead of animation properties, these sorts of animations are generally defined by transition properties in CSS.</p>
+
+                    <div id="parallax">
+                        <!--cool codepen I found that uses
+                            functions and keyframe to create
+                            a starfield that perpetually moves
+                            with the illusion of parallax -->
+                        <div id="starbox">
+                            <div id='stars'></div>
+                            <div id='stars2'></div>
+                            <div id='stars3'></div>
+                        </div>
+                    </div>
+
+                    <div id="sources">
+                        <p>Sources:</p>
+                        <ul>
+                            <li>[ <a href="https://codepen.io/yuhomyan/pen/OJMejWJ">"Candy Color Button Animation" by Yuhomyan</a> ]</li>
+                        <li>[ <a href="https://www.youtube.com/watch?v=uWvObpfrwjs">"The Main Role of Animation in User Interfaces" by Vanessa Alvarez</a> ]</li>
+                        <li>[ <a href="https://codepen.io/sarazond/pen/LYGbwj">"Parallax Star background in CSS" codepen by sarazond</a> ]</li>
+                        </ul>
+                    </div>
                 </div>
             </article>
 

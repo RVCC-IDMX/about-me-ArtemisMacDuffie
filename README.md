@@ -46,6 +46,10 @@ The page incorporates a functioning form for data entry.
 
 A navigation bar that responds to screen size is implemented, and page layout is an important element of the page design.
 
+### Animations/transforms
+
+This page uses CSS for animations and transforms.
+
 ### Web image formatting
 
 The page uses original SVG files and favicons.
@@ -79,6 +83,12 @@ Link on secondary background: 7.14
 Title: Tourney ([source](https://fonts.google.com/specimen/Tourney))
 
 Body: Signika Negative ([source](https://fonts.google.com/specimen/Signika+Negative))
+
+## Sources
+
+["Candy Color Button Animation" by Yuhomyan](https://codepen.io/yuhomyan/pen/OJMejWJ)
+
+["Parallax Star background in CSS" by sarazond](https://codepen.io/sarazond/pen/LYGbwj)
 
 ## License
 
