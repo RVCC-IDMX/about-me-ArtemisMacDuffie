@@ -385,6 +385,19 @@ hidden on small screen sizes
         margin-left: 1rem;
     }
 
+    /*
+    at non-mobile sizes, gallery images are sepia toned
+    by default and become normal toned on hover
+    */
+    #gallery img {
+        filter: sepia(60%);
+        transition: filter 200ms ease-in-out;
+    }
+
+    #gallery img:hover {
+        filter: sepia(0);
+    }
+
     /* video caption doesn't need to get wider than this */
     #video p {
         width: 750px;
