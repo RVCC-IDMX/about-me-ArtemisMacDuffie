@@ -94,6 +94,10 @@ Code: ["Parallax Star background in CSS"](https://codepen.io/sarazond/pen/LYGbwj
 
 Code: ["Simple HTML & SVG Loading Spinners"](https://codepen.io/sdelaney/pen/wWdxPe) by Stephen Delaney
 
+Professional analysis and code: ["When and How to Use CSS Animation"](https://www.talentica.com/blogs/when-and-how-to-use-css-animation) by Ritseh Gupta
+
+Code: ["Simple Card Layout with animation"](https://codepen.io/ritesh-gupta-the-sasster/pen/zYoLOYo) by Ritesh Gupta
+
 ## License
 
 [![Creative Commons Attribution 4.0 License icon](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0)

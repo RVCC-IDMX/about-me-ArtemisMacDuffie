@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="css/stars.css">
         <link rel="stylesheet" href="css/button.css">
         <link rel="stylesheet" href="css/spinner.css">
+        <link rel="stylesheet" href="css/slide.css">
 
         <!-- favicon -->
         <link rel="icon" type="image/png" href="img/favicon-96x96.png">
@@ -272,11 +273,11 @@
             <article id="blog">
                 <!-- blog article on CSS animation -->
                 <h2>
-                    CSS animation: why and how
+                    CSS animation: what, why, and how
                 </h2>
 
-                <div class="body">
-                    <p>Animation is essentially the act of causing something to move or change. It is easy to consider it entertainment, but designers must consider the effect it has from both an aesthetic and functional perspective. As addressed by Vanessa Alvarez in her presentation for Women Who Code, animation is attention-grabbing, which can be beneficial or deleterious. It can be distracting or malicious, but there are many benefits when used responsibly. It can be used to convey concepts more fluently than words or images alone, such as expressing brand identity, emotional messaging, or demonstration. In addition to being a vehicle for ideas, there are practical uses, such as helping users visualize information flow, helping users understand relationships between elements, giving users feedback to input, and informing users of app state.</p>
+                <div class="blog-post">
+                    <p>Animation is essentially the act of causing something to move or change, especially graphics of some kind. It is easy to consider it entertainment, but designers must consider the effect it has from both an aesthetic and functional perspective. As addressed by Vanessa Alvarez in her presentation for Women Who Code, animation is attention-grabbing, which can be beneficial or deleterious. It can be distracting or malicious, but there are many benefits when used responsibly. It can be used to convey concepts more fluently than words or images alone, such as expressing brand identity, emotional messaging, or demonstration. In addition to being a vehicle for ideas, there are practical uses, such as helping users visualize information flow, helping users understand relationships between elements, giving users feedback to input, and informing users of app state.</p>
 
                     <p>Animations can be placed in web pages as embedded media, such as videos (or the once common flash media), and they can be created with Javascript. However, CSS alone gives powerful tools for animation that does not require external media or complex code. One implementation is through the animation properties, which include the name of the keyframe rule that defines the animation, as well as various animation parameters such as duration, delay, and form of iteration. For example, this button below, designed by Yuhomyan, features a keyframe rule involving opacity and color such that it appears as a glint flashing over the button. The animation properties are in the declaration block for the button’s before pseudoclass such that it iterates forever with a three-second delay in between occurrences.</p>
 
@@ -300,7 +301,7 @@
                         </div>
                     </div>
 
-                    <p></p>
+                    <p>It is worth noting that the examples so far have not required any external media, only HTML elements and CSS styling. Although external media could be incorporated, such as applying a blur effect to an image, the versatility of CSS animation without them is noteworthy. The stars are white shadows, the hamburger icon is a linear gradient, and the button is simply a button. Because HTML can be used to create SVGs, CSS animation can use a wide variety of more complex shapes as well. Below are two examples of loaders, the first of which only uses simple HTML elements, while the second uses a series of SVGs to animate more modular and sophisticated images. As written by Stephen Delaney, they are simply circles, but by changing the SVG code in the HTML document, they could be squares, stars, or any other variety of shapes, and of any color (or series of colors) that can be described by RGB notation.</p>
 
                     <div id="spin-animation">
                         <!--Element for spinner made with HTML + CSS-->
@@ -321,7 +322,15 @@
                             <circle cx="35.81" cy="7.86" r="1.3" fill="#fcdb86"/>
                         </svg>
                         <p id="svg-para">Spinner created with custom SVG and CSS Animation</p></div>
-                      </div>
+                    </div>
+
+                    <p>There is the question of why a developer should use CSS instead of Javascript for these purposes. Ritesh Gupta was given an animation requirement as part of a project and needed to decide which would be better for the animation described. In his blog post on the topic, he described the advantages to each. In brief, Javascript grants much more granular control over animation, but CSS animations are more stable and optimized. Javascript performance is variable and can be much better than CSS, but it could also be worse. For his animation, he decided to use CSS because it would be easier for a wide variety of devices to run, and the effects being animated were straightforward to implement in CSS. Below is an example of the animation properties being applied to my site logo, iterating infinitely.</p>
+
+                    <div id="slide">
+                        <img src="img/am-orbital.png" width="240" alt="The letters A and M">
+                    </div>
+
+                    <p>To summarize, animations have many uses, both as a form of artistic expression and a tool of functional design. Real-time animation in browsers can be done through CSS and Javascript, but CSS offers advantages in elegance, stability, and optimization. Implementing CSS animation is more or less a matter of deciding which CSS properties are to be changed, how they should change, and how the animation is triggered. It is easy to be excessive with animations, but their utility and potential mean that developers should be fully aware of how to create and use them.</p>
 
                     <div id="sources">
                         <p>Sources:</p>
@@ -330,6 +339,8 @@
                             <li>[ <a href="https://codepen.io/yuhomyan/pen/OJMejWJ">"Candy Color Button Animation" codepen by Yuhomyan</a> ]</li>
                             <li>[ <a href="https://codepen.io/sarazond/pen/LYGbwj">"Parallax Star background in CSS" codepen by sarazond</a> ]</li>
                             <li>[ <a href="https://codepen.io/sdelaney/pen/wWdxPe">"Simple HTML & SVG Loading Spinners" codepen by Stephen Delaney</a> ]</li>
+                            <li>[ <a href="https://www.talentica.com/blogs/when-and-how-to-use-css-animation">"When and How to Use CSS Animation" by Ritesh Gupta</a> ]</li>
+                            <li>[ <a href="https://codepen.io/ritesh-gupta-the-sasster/pen/zYoLOYo">"Simple Card Layout with animation" by Ritesh Gupta</a> ]</li>
                         </ul>
                     </div>
                 </div>

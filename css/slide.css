@@ -1,0 +1,48 @@
+/*
+    This CSS code is a slight modification of code from
+    "When and How to Use CSS Animation" blog post from Ritesh Gupta
+    which can be found at
+    https://www.talentica.com/blogs/when-and-how-to-use-css-animation
+    and "Simple Card Layout with animation" codepen by Ritesh Gupta
+    which can be found at
+    https://codepen.io/ritesh-gupta-the-sasster/pen/zYoLOYo
+*/
+
+@keyframes card-animation {
+    0% {
+        opacity: 0;
+        right: 100%;
+    }
+    40% {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+#slide {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#slide > img {
+    animation: card-animation 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    right: 0;
+    max-width: 30vw;
+}
+
+@media screen and (min-width: 60em) {
+    @keyframes card-animation {
+        0% {
+            opacity: 0;
+            right: 60%;
+        }
+        40% {
+            opacity: 1;
+            right: 0;
+        }
+    }
+}
