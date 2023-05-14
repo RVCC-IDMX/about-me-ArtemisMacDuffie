@@ -1,6 +1,6 @@
 # README
 
-![A M icon](img\favicon-96x96.png)
+![A M icon](img/favicon-96x96.png)
 
 Author: Artemis MacDuffie
 
